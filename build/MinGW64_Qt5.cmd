@@ -7,8 +7,8 @@ SET QT_TYPE=%2
 SET COMPILER_VERSION=%3
 SET QT_RP=%4
 
-@if mingw810_1610_32==%COMPILER_VERSION% (set COMPILER_VERSION2=mingw810_32)
-@if mingw810_1610_64==%COMPILER_VERSION% (set COMPILER_VERSION2=mingw810_64)
+@if mingw810_1620_32==%COMPILER_VERSION% (set COMPILER_VERSION2=mingw810_32)
+@if mingw810_1620_64==%COMPILER_VERSION% (set COMPILER_VERSION2=mingw810_64)
 
 :: 设置Qt路径和编译器路径
 set PATH=D:\a\buildRedPanda-CPP\%QT_VERSION%-%QT_TYPE%\%COMPILER_VERSION2%%QT_RP%\bin;D:\a\buildRedPanda-CPP\mingw64\bin;D:\a\buildRedPanda-CPP\Tools\mingw1310_64\bin;D:\a\buildRedPanda-CPP\mingw32\bin;%PATH%
